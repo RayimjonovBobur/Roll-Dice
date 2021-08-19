@@ -159,3 +159,44 @@ main {
 .hidden {
   display: none;
 }
+
+
+footer {
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.myinstagram, .mytelegram, .mygithub {
+  background: linear-gradient(178deg, #1526f3, #69eae1);
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  transition: 0.5s;
+  animation: inputanim 2s ease-in-out infinite  alternate;
+}
+
+.myinstagram a {
+  color: rgb(255, 0, 0);
+}
+
+.mytelegram a {
+  color: blue;
+}
+
+.mygithub a {
+  color: black;
+}
+
+.myinstagram:hover, .mytelegram:hover, 
+.mygithub:hover {
+  box-shadow: 0 0 15px #fff;
+  background: #fff;
+}
